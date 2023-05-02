@@ -131,116 +131,6 @@
     display: none;
 }
 
-/*responsivo*/
-
-    @media (max-width: 667px){
-        .navbar{
-            position: fixed;
-            width: 100%;
-            font-family: 'Roboto', sans-serif;
-            padding: 15px 0;
-            box-shadow: 0px 0px 3px black;
-            transition: all 0.1s;
-        }
-        .navbar .menu li a{
-            display: none;
-        }
-
-        .navbar .logo{
-            margin-left: -50px;
-        }
-
-        .home{
-            display: flex;
-            background: url(img/Banner2.png) no-repeat center;
-            color: aliceblue;
-            height: 100vh;
-            min-height: 500px;
-            font-family: 'Roboto', sans-serif;
-        }
-        .home .home-content .text-1{
-            font-size: 27px;
-        }
-        .home .home-content .text-2{
-            font-size: 60px;
-            font-weight: 500;
-            margin-left: -3px;
-        }
-        .home .home-content .text-3{
-            font-size: 30px;
-            margin: 5px 0;
-        }
-
-        .home .home-content{
-            display: flex;
-            flex-direction: column;
-            margin-left: -180px;
-        }
-
-        .home .home-content a{
-         text-align: center;
-        }
-
-        .max-width{
-            max-width: 440px;
-        }
-
-        .about .tittle{
-            margin-top: -250px;
-            font-size: 30px;
-        }
-        
-        .about .about-content .column-left img{
-            display: none;
-        }
-
-        .about .tittle::after{
-            content: "Quem sou eu";
-            color: black;
-            text-align: center;
-            width: 10rem;
-        }
-
-        .about .about-content .column-right .text {
-            width: 20rem;
-            position: absolute;
-            left: 10%;
-            margin-top: 2rem;
-        }
-        .about .about-content .column-right p {
-            width: 20rem;
-            position: absolute;
-            left: 10%;
-            margin-top: 7rem;
-        }
-
-        .about .about-content .column-right a{
-            position: absolute;
-            left: 10%;
-            top: 160%;
-        }
-
-        
-        .services .serv-content .card{
-            flex: 20rem;
-            margin-bottom: 2rem;
-        }
-
-        .services{
-            padding-bottom: 90rem;
-        }
-
-        .services .tittle::after{
-            width: 10rem;
-        }
-
-
-
-        
-
-        
-        
-}
 /* sessao similares*/
 
 section{
@@ -285,14 +175,14 @@ section .tittle::after{
 /* sessao sobre*/
 
 
-.about, .services, .skills, .projetos{
+.about, .services, .skills, .projetos, .contact{
     font-family: 'Roboto', sans-serif;
-    height: 93vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
 }
 
-.about .about-content, .services .serv-content, .skills-content, .projetos-content{
+.about .about-content, .services .serv-content, .skills-content, .projetos-content, .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -300,7 +190,7 @@ section .tittle::after{
 }
 
 .about .about-content .column-left{
-    width: 45%;
+    width: calc(50%-30px);
 }
 
 .about .tittle{
@@ -308,11 +198,11 @@ section .tittle::after{
 }
 
 .about .about-content{
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .about .about-content .column-right{
-    width: 55%;
+    width: calc(50%-30px);
 }
 
 .about .about-content .column-right .text{
@@ -392,7 +282,7 @@ section .tittle::after{
     cursor: pointer;
     box-shadow: 0 2px 3px black;
     transition: all 0.3s ease;
-    margin-top: 10rem;
+    margin-top: 15rem;
     margin-left: 15px;
 }
 
@@ -551,7 +441,7 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 .projetos .carrosel .card{
     background: #2e2787;
     border-radius: 6px;
-    padding: 25px 35px;
+    padding: 30px 35px;
     display: inline-block;
     cursor: pointer;
     margin-top: 150px;
@@ -583,3 +473,130 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 .projetos .tittle{
     margin-top: -180px;
 }
+
+.contact .contact-content .column-left, .column-right{
+    width: calc(50% -30px);
+}
+
+.contact .contact-content .column-left p{
+    text-align: justify;
+}
+.contact-content .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.contact .icons{
+    margin: 10px 0;
+    font-size: 15px;
+    
+}
+
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.info{
+    margin-left: 30px;
+}
+
+.row ion-icon{
+    font-size: 25px;
+    color: #2e2787;
+}
+
+.info .head{
+    font-size: 16px;
+}
+
+.info .subtitle{
+    font-size: 12px;
+}
+
+.contact-form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+  }
+  
+  .contact-form label {
+    color: black;
+  }
+  
+  .contact-form .heading {
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    margin-bottom: 12px;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    resize: none;
+    height: 80px;
+    width: 460px;
+  }
+  
+  .contact-content{
+    margin-top: 10rem;
+  }
+
+  .contact .tittle{
+    margin-top: -15rem;
+  }
+
+  .contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+  
+  
+  .contact-form button[type="submit"] {
+    background-color: #2e2787;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+
+  .contact-form button:active{
+    transform: scale(0.95);
+  }
+
+  .contact .column-left .contato-icons ion-icon{
+    font-size: 25px;
+    margin-right: 60px;
+    margin-top: 10px;
+    transition: all 0.4s ease;
+  }
+
+  .contact .column-left .contato-icons a{
+    color: #2e2787;
+    
+  }
+
+  .contact .column-left .contato-icons ion-icon:hover{
+    transform: scale(1.07);
+  }
+  
+  
