@@ -7,3 +7,17 @@ $(document).ready(function() {
         }
     })
 })
+
+var typed = new Typed(".type",{
+    strings:["Desenvolvedor Web","Técnico em Informática","Programador", "Jogador de LoL"],
+    typeSpeed:80,
+    backSpeed:100,
+    loop:true
+})
+
+var typed = new Typed(".type2",{
+    strings:["Desenvolvedor Web","Técnico em Informática","Programador", "Jogador de LoL"],
+    typeSpeed:80,
+    backSpeed:100,
+    loop:true
+})
