@@ -7,6 +7,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .navbar{
     position: fixed;
     width: 100%;
@@ -213,10 +217,12 @@ section .tittle::after{
 
 .about .about-content .column-right .text span{
     color: #2e2787;
+    width: 100%;
 }
 
 .about .about-content .column-right p{
     text-align: justify;
+    width: 100%;
 }
 
 .about .about-content .column-right a{
@@ -517,7 +523,7 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .contact-form {
-    background-color: #f2f2f2;
+    background-color: #ededed;
     padding: 20px;
     border-radius: 10px;
     width: 500px;
@@ -555,9 +561,7 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     margin-top: 10rem;
   }
 
-  .contact .tittle{
-    margin-top: -15rem;
-  }
+
 
   .contact-form input, .contact-form textarea {
     padding: 10px;
@@ -597,6 +601,26 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
   .contact .column-left .contato-icons ion-icon:hover{
     transform: scale(1.07);
+  }
+
+  footer{
+    background: #2e2787;
+    color: #ffff;
+    text-align: center;
+    padding: 12px;
+  }
+
+  footer a{
+    color: #ffff;
+  }
+
+  @media(max-width:600px){
+  	.menu{
+        display: none;
+    }
+    .home-content{
+        margin-left: -13rem;
+    }
   }
   
   
