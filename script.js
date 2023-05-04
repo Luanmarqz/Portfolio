@@ -9,7 +9,7 @@ $(document).ready(function() {
 })
 
 var typed = new Typed(".type",{
-    strings:["Desenvolvedor Web","Técnico em Informática","Programador", "Jogador de LoL"],
+    strings:["Desenvolvedor Web","Téc. em Informática","Programador"],
     typeSpeed:80,
     backSpeed:100,
     loop:true
