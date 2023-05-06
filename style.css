@@ -266,10 +266,13 @@ section .tittle::after{
 .services {
     background: #101728;
     color: aliceblue;
-    padding-bottom: 62rem;
 }
 .services .tittle::before{
     background: aliceblue;
+}
+
+.services .tittle{
+    margin-top: -20rem;
 }
 
 .services .tittle::after{
@@ -288,7 +291,7 @@ section .tittle::after{
     cursor: pointer;
     box-shadow: 0 2px 3px black;
     transition: all 0.3s ease;
-    margin-top: 15rem;
+    margin-top: 10rem;
     margin-left: 15px;
 }
 
@@ -335,6 +338,7 @@ section .tittle::after{
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .skills .skills-content a{
@@ -425,8 +429,18 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     margin-top: 10rem;
 }
 
-.skills p{
-    width: 100rem;
+
+.experiencias{
+    padding: 20px;
+    border: 2px solid #2e2787;
+    background: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.experiencias:hover{
+    transform: scale(1.03);
 }
 
 .projetos{
@@ -615,12 +629,185 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   }
 
   @media(max-width:600px){
-  	.menu{
+    .navbar{
+        width: 100%px;
+    }
+    
+    .menu{
         display: none;
     }
     .home-content{
-        margin-left: -13rem;
+        margin-left: -15rem;
+        width: 245px;
     }
+    .home .home-content .text-2{
+        font-size: 40px;
+    }
+    .home .home-content .text-3{
+        font-size: 20px;
+        width: 300px;
+    }
+
+    .home .home-content .text-3 span{
+        margin-bottom: 200rem;
+    }
+
+    .about .tittle::after, .services .tittle::after{
+        width: 130px;
+    }
+
+    .navbar.sticky{
+        display: none;
+    }
+
+   
+
+    .about .about-content .column-right p{
+        text-align: justify;
+        font-size: 12px;
+        width: 250px;
+    }
+    
+    .about .about-content .column-right .text{
+        font-size: 20px;
+        width: 300px;
+    }
+
+    .about .about-content{
+        display: inline-block;
+        margin-left: -1.7rem;
+    }
+    
+    .about .about-content .column-left img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-left: -5rem;
+    }
+    .about .about-content .column-right a{
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .max-width{
+        width: 360px;
+    }
+
+
+    .services{
+        padding-bottom: 55rem;
+    }
+
+    .services .serv-content .card{
+        background: #2e2787;
+        height: 200px;
+        text-align: center;
+        border-radius: 6px;
+        padding: 20px;
+        cursor: pointer;
+        box-shadow: 0 2px 3px black;
+        transition: all 0.3s ease;
+        margin-top: 1rem;
+        margin-left: -2rem;
+    }    
+
+    .services .serv-content .box{
+        width: 200px;
+    }
+
+    .services .tittle{
+        margin-top: -5rem;
+    }
+
+    .skills .tittle{
+        margin-top: -5rem;
+        margin-left: -4rem;
+        width: 300px;
+    }
+
+    .skills{
+        padding-bottom: 65rem;
+    }
+
+    .skills .skills-content .column-left .text{
+        display: none;
+    }
+
+    .skills .skills-content{
+        display: inline-block;
+        margin-left: -4.5rem;
+    }
+
+    .skills .skills-content .column-left{
+        margin-left: 50px;
+        margin-top: -120px;
+        margin-bottom: 40px;
+    }
+
+    .experiencias{
+        width: 200px;
+    }
+
+    .cardskill {
+        width: 300px;
+        margin-left: 10px;
+      }
+
+    .projetos{
+        padding-bottom: 102rem;
+    }
+    
+    .projetos .tittle{
+        margin-top: 5px;
+    }
+
+    .projetos .tittle::after{
+        width: 130px;
+    }
+
+    
+    .projetos .carrosel .card{
+        width: 200px;
+        height: 210px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .projetos .carrosel .card .box img{
+        margin-left: -10px;
+        margin-top: -10px;
+    }
+    
+    .contact{
+        padding-bottom: 70rem;
+    }
+
+    .contact .contact-content{
+        display: inline-block;
+        margin-top: -1rem;
+        margin-left: -0.5rem;
+    }
+
+    .contato-icons{
+        width: 270px;
+    }
+
+    .contact .contact-content .column-right .contact-form{
+        width: 300px;
+        margin-left: -3.5rem;
+        margin-top: 5rem;
+    }
+    textarea {
+        resize: none;
+        height: 80px;
+        width: 260px;
+      }
+
+      footer{
+        font-size: 10px;
+      }
+
   }
   
   
