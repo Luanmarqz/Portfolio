@@ -667,6 +667,10 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
         font-size: 12px;
         width: 250px;
     }
+
+    .about .about-content .column-right{
+        margin-left: -1rem;
+    }
     
     .about .about-content .column-right .text{
         font-size: 20px;
@@ -675,7 +679,7 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
     .about .about-content{
         display: inline-block;
-        margin-left: -1.7rem;
+        margin-left: -1rem;
     }
     
     .about .about-content .column-left img{
@@ -692,11 +696,12 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
     .max-width{
         width: 360px;
+
     }
 
 
     .services{
-        padding-bottom: 55rem;
+        padding-bottom: 60rem;
     }
 
     .services .serv-content .card{
@@ -709,7 +714,7 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
         box-shadow: 0 2px 3px black;
         transition: all 0.3s ease;
         margin-top: 1rem;
-        margin-left: -2rem;
+        margin-left: -1.5rem;
     }    
 
     .services .serv-content .box{
@@ -740,7 +745,7 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     }
 
     .skills .skills-content .column-left{
-        margin-left: 50px;
+        margin-left: 60px;
         margin-top: -120px;
         margin-bottom: 40px;
     }
@@ -755,7 +760,7 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
       }
 
     .projetos{
-        padding-bottom: 107rem;
+        padding-bottom: 102rem;
     }
     
     .projetos .tittle{
@@ -795,7 +800,7 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
     .contact .contact-content .column-right .contact-form{
         width: 300px;
-        margin-left: -3.5rem;
+        margin-left: -3.2rem;
         margin-top: 5rem;
     }
     textarea {
