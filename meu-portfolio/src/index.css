@@ -11,6 +11,14 @@
     max-width: none !important;
 }
 
+/* Navbar Customization */
+.navbar-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    padding-left: 20px;
+}
+
 /* Home Section */
 
 .home-container {
@@ -57,6 +65,50 @@
     margin-top: 20px;
     font-size: 20px;
 }
+
+/* Servicos Section */
+.serviços-container {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(228, 228, 228);
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.serviços-container .Header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.serviços-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px 50px 20px;
+}
+
+
+.serviço-card.card{
+    color: white;
+    border-radius: 10px !important;
+}
+
+.servicos-container {
+    background-color: #121212; /* Um fundo escuro para contrastar com os cards */
+    padding: 80px 20px;
+}
+
+.card {
+    transition: transform 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* O card sobe um pouquinho quando o mouse passa */
+    cursor: pointer;
+}
+
+/* Scroll Suave */
 
 
 html {

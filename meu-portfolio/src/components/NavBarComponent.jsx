@@ -6,7 +6,8 @@ function NavbarComponent() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
       <Container>
-        <Navbar.Brand href="#home">Meu Portfólio</Navbar.Brand>
+        <Navbar.Brand href="#home" className="
+        navbar-header">Meu Portfólio</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
