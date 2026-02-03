@@ -5,7 +5,8 @@ import Button from "react-bootstrap/Button";
 
 function Hero() {
   return (
-      <Container fluid className="home-container">
+    
+      <Container fluid className="home-container" id="home">
         <Row className="align-items-center">
           <Col md={7}>
             <h1 className="display-2 fw-bold">Olá, eu sou Desenvolvedor</h1>

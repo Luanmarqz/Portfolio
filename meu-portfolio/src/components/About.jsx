@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 
 function About() {
   return (
-    <Container className='sobre-container'>
+    <Container className='sobre-container' id='sobre'>
       <Row className='ladoimagem'>
         <Col className='imagemsobre'><img src={"https://images.squarespace-cdn.com/content/v1/666af2449f398d3d003865ac/1718284871742-9DZM1XF33UK7EO75UMDT/BreeLewis-Inscreen-4.jpg?format=1500w"} alt="" /></Col>
       </Row>
