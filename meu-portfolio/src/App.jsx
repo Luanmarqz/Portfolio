@@ -1,7 +1,8 @@
 import NavbarComponent from './components/NavBarComponent';
 import Hero from './components/Hero';
 import About from './components/About';
-import Especialidade from './components/Serviços';
+import Serviços from './components/Serviços';
+import Especialidade from './components/Especialidade';
 import './App.css'
 
 
@@ -11,6 +12,7 @@ function App() {
       <NavbarComponent />
       <Hero />
       <About />
+      <Serviços />
       <Especialidade />
       {/* Aqui você poderá adicionar as próximas seções futuramente */}
     </div>

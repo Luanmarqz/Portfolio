@@ -116,6 +116,47 @@
     cursor: pointer;
 }
 
+/* Especializações Section */
+.especialidade-container {
+     min-height: 95vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.especialidade-container h1{
+    text-align: center;
+    padding: 50px 0;
+}
+
+.especialidade-card{
+    width: 400px;
+    height: 250px;
+    border-radius: 8px !important;
+    border: 1px solid #ccc !important;
+}
+
+.especialidade-card .progress {
+    height: 30px;
+    width: 100%;
+}
+
+.especialidade-cards{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.especialidade-cards2{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+}
+
 /* Scroll Suave */
 
 
