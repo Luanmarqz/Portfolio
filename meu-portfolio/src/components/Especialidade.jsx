@@ -6,7 +6,7 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 function BasicExample() {
   return (
     
-    <Container className='especialidade-container'>
+    <Container className='especialidade-container' id='especialidade'>
     <h1>Especialidades</h1>
     <CardGroup className='especialidade-cards'>
       <Card className='especialidade-card text-center text-dark' bg='light'>

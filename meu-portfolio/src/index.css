@@ -157,6 +157,31 @@
     margin-top: 30px;
 }
 
+/* Projetos Section */
+.projeto-container {
+     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(228, 228, 228);
+    border-bottom: 1px solid #ccc;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.caption{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background: rgba(0, 5, 17, 0.57);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.8px);
+-webkit-backdrop-filter: blur(6.8px);
+}
+
+
+
 /* Scroll Suave */
 
 
