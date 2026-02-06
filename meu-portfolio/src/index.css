@@ -1,226 +1,322 @@
 /* Remove o padding lateral interno de todos os containers */
-.container, .container-fluid {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-    margin-right: auto;
-    margin-left: auto;
+.container,
+.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  margin-right: auto;
+  margin-left: auto;
+  overflow-x: hidden;
 }
 
-/* Se você quer que eles ocupem sempre 100% da largura sem o "pulo" do max-width */
 .container {
-    max-width: none !important;
+  max-width: none !important;
 }
 
 /* Navbar Customization */
 .navbar-header {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ffffff;
-    padding-left: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  padding-left: 20px;
 }
 
 /* Home Section */
 
 .home-container {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background-color: rgb(228, 228, 228);
-    border-bottom: 1px solid #ccc;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: rgb(228, 228, 228);
+  border-bottom: 1px solid #ccc;
 }
 
 .align-items-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 
 /* Sobre Section */
 
 .sobre-container {
-    display: flex;
-    flex-direction: row;
-    max-width: 100%;
-    min-height: 95vh;
-    gap: 80px;
-
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-.imagemsobre img{
-    max-width: 130%;
-    height: 100%;
-    object-fit: cover;
+.conteudo-sobre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.ladotexto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   padding-top: 50px;
-   gap: 100px;
+.imagemsobre img {
+  max-width: 30vw;
+  height: 100vh;
+  object-fit: cover;
 }
 
-.textosobre, .textosobre-2 p{
-    margin-top: 20px;
-    font-size: 20px;
+.ladosobre.col-md-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 200px;
+}
+
+.textosobre {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.sobre-row {
+  gap: 30px;
 }
 
 /* Servicos Section */
 .serviços-container {
-    min-height: 95vh;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(228, 228, 228);
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(228, 228, 228);
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .serviços-container .Header {
-    text-align: center;
-    padding: 50px 0;
+  text-align: center;
+  padding: 50px 0;
 }
 
 .serviços-cards {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 50px 20px;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+  align-items: center;
 }
 
 .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.serviço-card.card{
-    color: white;
-    border-radius: 10px !important;
-    height: 250px;
+.serviço-card.card {
+  color: white;
+  border-radius: 10px !important;
+  height: 250px;
+  width: 350px;
 }
 
-.servicos-container {
-    background-color: #121212; /* Um fundo escuro para contrastar com os cards */
-    padding: 80px 20px;
+.serviço-card.card {
+  transition: transform 0.3s ease; /* Efeito suave ao passar o mouse */
 }
 
-.card {
-    transition: transform 0.3s ease; /* Efeito suave ao passar o mouse */
-}
-
-.card:hover {
-    transform: translateY(-5px); /* O card sobe um pouquinho quando o mouse passa */
-    cursor: pointer;
+.serviço-card.card:hover {
+  transform: translateY(
+    -5px
+  ); /* O card sobe um pouquinho quando o mouse passa */
+  cursor: pointer;
 }
 
 /* Especializações Section */
 .especialidade-container {
-     min-height: 95vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
-.especialidade-container h1{
-    text-align: center;
-    padding: 50px 0;
+.especialidade-container .Header {
+  text-align: center;
+  padding: 50px 0;
 }
 
-.especialidade-card{
-    width: 400px;
-    height: 250px;
-    border-radius: 8px !important;
-    border: 1px solid #ccc !important;
+.especialidade-card {
+  width: 400px;
+  height: 250px;
+  border-radius: 8px !important;
+  border: 1px solid #ccc !important;
+  padding: 20px 20px;
 }
 
 .especialidade-card .progress {
-    height: 30px;
-    width: 100%;
+  height: 30px;
+  width: 100%;
 }
 
-.especialidade-cards{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    margin-top: 100px;
+.especialidade-cards {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
-.especialidade-cards2{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    margin-top: 30px;
+.especialidade-cards2 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 30px;
 }
 
 /* Projetos Section */
 .projeto-container {
-     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(228, 228, 228);
-    border-bottom: 1px solid #ccc;
-    flex-direction: column;
-    gap: 50px;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 50px 0;
+  background-color: rgb(228, 228, 228);
+  gap: 50px;
 }
 
-.caption{
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    background: rgba(0, 5, 17, 0.57);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(6.8px);
--webkit-backdrop-filter: blur(6.8px);
+.caption {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  background: rgba(0, 5, 17, 0.57);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.8px);
+  -webkit-backdrop-filter: blur(6.8px);
 }
 
+.d-block {
+  border-radius: 15px;
+}
 
+.carrossel-projetos {
+  box-shadow: 0px 21px 34px 12px rgba(0, 0, 0, 0.52);
+  -webkit-box-shadow: 0px 21px 34px 12px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: 0px 21px 34px 12px rgba(0, 0, 0, 0.52);
+  border-radius: 15px;
+}
+
+/* Contato Section */
+.contato-container {
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding-top: 50px;
+}
+
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 400px;
+  border-radius: 12px;
+}
+
+.form-header {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: #121212 solid 1px;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding-top: 100px;
+}
+
+.contato-body.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  gap: 20px;
+  width: 400px;
+}
+
+.texto-contato .col {
+  flex: 0 0 0;
+}
+
+.texto-contato p {
+  font-size: 16px;
+  width: 300px;
+}
+
+.icones-contato.col {
+  flex: 1 0 0;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
 
 /* Scroll Suave */
-
 
 html {
   scroll-behavior: smooth;
 }
 
-
 /* meqias responsivas */
 
 @media (min-width: 1340px) and (max-width: 1366px) {
+  /*home section*/
+  .display-2.fw-bold {
+    font-size: 3rem;
+  }
 
-    /*home section*/
-    .display-2.fw-bold{
-        font-size: 3rem;
-    }
-    
-    
+  /*sobre section*/
 
-    /*sobre section*/
+  .sobre-container {
+    gap: 10px;
+    height: 90vh;
+  }
 
-    .sobre-container {
-        gap: 10px;
-        height: 90vh;
-    }
+  .imagemsobre img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-    .imagemsobre img{
-        max-width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    
-    .ladotexto{
-        gap: 30px;
-    }
-    
-    .textosobre p, .textosobre-2 p{
+  .ladotexto {
+    gap: 30px;
+  }
+
+  .textosobre p,
+  .textosobre-2 p {
     margin-top: 10px;
     font-size: 16px;
-}    
-
+  }
 }
