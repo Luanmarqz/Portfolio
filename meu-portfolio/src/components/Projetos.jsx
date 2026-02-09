@@ -30,8 +30,8 @@ function Projetos() {
               />
             </a>
             <Carousel.Caption className="caption">
-              <h3>Lista de Ocôrrencias</h3>
-              <p>Django, BootStrap e JavaScript</p>
+              <h3>Ocôrrencias IF</h3>
+              <p>Django e BootStrap</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>

@@ -6,6 +6,7 @@ import Especialidade from "./components/Especialidade";
 import Projetos from "./components/Projetos";
 import Contato from "./components/Contato";
 import "./App.css";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <Especialidade />
       <Projetos />
       <Contato />
-      <footer></footer>
+      <Footer />
       {/* Aqui você poderá adicionar as próximas seções futuramente */}
     </div>
   );

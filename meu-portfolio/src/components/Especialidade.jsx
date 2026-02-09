@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
+
 function BasicExample() {
   return (
     <Container className="especialidade-container" id="especialidade">
