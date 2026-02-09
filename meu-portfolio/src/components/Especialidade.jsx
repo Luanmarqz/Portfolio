@@ -6,7 +6,7 @@ import ProgressBar from "react-bootstrap/ProgressBar";
 function BasicExample() {
   return (
     <Container className="especialidade-container" id="especialidade">
-      <div className="Header text-center mb-5">
+      <div className="Header text-center">
         <header>
           <h1>Especialidades</h1>
           <p>Tecnologias que trabalho</p>

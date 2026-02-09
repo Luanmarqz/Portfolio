@@ -15,7 +15,7 @@ function Projetos() {
       </div>
 
       <div className="carrossel">
-        <Carousel className="carrossel-projetos">
+        <Carousel className="carrossel-projetos" interval={null}>
           <Carousel.Item>
             <a
               href="https://luhanmarq.pythonanywhere.com/"
